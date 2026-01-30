@@ -29,6 +29,7 @@ jobs:
       - name: Run tests
         run: npm test
   deploy:
+    needs: test
     runs-on: ubuntu-latest
     steps:
         # Runs a single command using the runners shell
